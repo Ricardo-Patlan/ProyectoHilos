@@ -14,8 +14,13 @@ public class Hilos {
 
     public static void main(String[] args) throws InterruptedException {
         Thread hilo = new ThereadSimple("Juan");
-        hilo.start();
+        hilo.start();ç
+                
+            
 
+                
+                
+                
         Thread hilo2 = new ThereadSimple("joce");
         hilo2.start();
 
