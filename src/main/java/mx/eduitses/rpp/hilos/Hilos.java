@@ -12,22 +12,15 @@ import threadSimple.ThereadSimple;
  */
 public class Hilos {
 
+    
     public static void main(String[] args) throws InterruptedException {
-        Thread hilo = new ThereadSimple("Juan");
-        hilo.start();ç
-                
-            
-
-                
-                
-                
-        Thread hilo2 = new ThereadSimple("joce");
-        hilo2.start();
-
-
+        Thread hilo = new ThereadSimple("juan");
+        hilo.start();
         System.out.println(hilo.getState());
 
-       // Thread.sleep(10000);
-       
+        
+        Thread hilo2 = new ThereadSimple("jose");
+        hilo2.start();
+
     }
 }

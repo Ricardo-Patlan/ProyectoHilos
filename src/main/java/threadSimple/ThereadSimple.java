@@ -10,19 +10,20 @@ package threadSimple;
  */
 public class ThereadSimple extends Thread{
 
-    public ThereadSimple(String Name) {
-        super(Name);
-    }
-
-  
     @Override
     public void run() {
-        System.out.println("Se inicia el metodo Run del Hilo" + getName());
-        for(int i = 0; i < 100; i++){
-            System.out.println("hILO" + getName());
+        System.out.println("Se inicia el metodo run del Hilo  :" + getName());
+        for (int i = 0; i < 100; i++) {
+            
+           
+            System.out.println("Hilo:"+ getName());
+            
         }
-        System.out.println("Hilo finalizado");
+        System.out.println("hilo finalizado" + getName());
     }
-    
+
+    public ThereadSimple(String name) {
+        super(name);
+    }
     
 }
